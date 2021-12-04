@@ -1,6 +1,6 @@
 import styles from './css/section4.module.scss'
 
-const section4 = () => {
+const Section4 = () => {
   return (
     <div className={styles.sectionFourContent}>
       <div className={styles.sectionTxt}>
@@ -24,4 +24,4 @@ const section4 = () => {
   )
 }
 
-export default section4
+export default Section4

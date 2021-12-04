@@ -13,7 +13,7 @@ import styles from './css/testimonialsx.module.scss'
 
 const images = [User1, User2, User3, User1, User2, User3, User1, User2, User3]
 
-const testimonialsOther = () => {
+const Testimonialsx = () => {
   // const NextArrow = ({ onClick }) => {
   //   return (
   //     <div className={styles.arrowNext} onClick={onClick}>
@@ -112,4 +112,4 @@ const testimonialsOther = () => {
   )
 }
 
-export default testimonialsOther
+export default Testimonialsx

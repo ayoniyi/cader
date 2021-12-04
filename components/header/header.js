@@ -12,19 +12,19 @@ const header = () => {
         </div>
         <nav className={styles.headerRight}>
           <div className={styles.headerLinks}>
-            <Link href="">
+            <Link passHref href="">
               <p>Plans</p>
             </Link>
-            <Link href="">
+            <Link passHref href="">
               <p>About us</p>
             </Link>
-            <Link href="">
+            <Link passHref href="">
               <p>Blog</p>
             </Link>
-            <Link href="">
+            <Link passHref href="">
               <p>FAQ</p>
             </Link>
-            <Link href="">
+            <Link passHref href="">
               <p>Contact us</p>
             </Link>
           </div>

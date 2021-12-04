@@ -11,7 +11,7 @@ import User1 from '../assets/png/user1.png'
 import User2 from '../assets/png/user2.png'
 import User3 from '../assets/png/user3.png'
 
-const testimonials = () => {
+const Testimonials = () => {
   // Slider settings
   const settings = {
     dots: false,
@@ -70,4 +70,4 @@ const testimonials = () => {
   )
 }
 
-export default testimonials
+export default Testimonials

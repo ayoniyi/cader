@@ -10,7 +10,7 @@ import t1 from '../assets/svg/txt/hero.svg'
 import t2 from '../assets/svg/txt/heroM.svg'
 import t1m from '../assets/svg/txt/heroalt.svg'
 
-const hero = () => {
+const Hero = () => {
   return (
     <div className={styles.heroContent}>
       <div className={styles.heroDesc}>
@@ -52,4 +52,4 @@ const hero = () => {
   )
 }
 
-export default hero
+export default Hero

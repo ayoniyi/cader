@@ -1,11 +1,11 @@
-import Container from '../components/container'
-import Header from '../components/header/header'
-import Hero from '../components/hero'
-import SectionOne from '../components/section1'
-import SectionTwo from '../components/section2'
-import SectionThree from '../components/section3'
-import SectionFour from '../components/section4'
-import Footer from '../components/footer'
+import Container from '../components/Container'
+import Header from '../components/header/Header'
+import Hero from '../components/Hero'
+import SectionOne from '../components/Section1'
+import SectionTwo from '../components/Section2'
+import SectionThree from '../components/Section3'
+import SectionFour from '../components/Section4'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (

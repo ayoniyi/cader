@@ -1,4 +1,4 @@
-const container = (props) => {
+const Container = (props) => {
   return (
     <div className="container">
       <div className="containerContent">{props.children}</div>
@@ -6,4 +6,4 @@ const container = (props) => {
   )
 }
 
-export default container
+export default Container

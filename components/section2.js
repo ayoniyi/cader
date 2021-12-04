@@ -7,7 +7,7 @@ import Step1 from '../assets/svg/step1.svg'
 import Step2 from '../assets/svg/step2.svg'
 import Step3 from '../assets/svg/step3.svg'
 
-const section2 = () => {
+const Section2 = () => {
   return (
     <div className={styles.sectionTwoContent}>
       <div className={styles.topText}>
@@ -70,4 +70,4 @@ const section2 = () => {
   )
 }
 
-export default section2
+export default Section2

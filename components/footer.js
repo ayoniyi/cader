@@ -2,7 +2,7 @@ import styles from './css/footer.module.scss'
 
 import Link from 'next/link'
 
-const footer = () => {
+const Footer = () => {
   return (
     <footer>
       <div className={styles.footerContent}>
@@ -11,19 +11,19 @@ const footer = () => {
         </div>
         <div className={styles.footerRight}>
           <nav className={styles.footerLinks}>
-            <Link href="">
+            <Link passHref href="">
               <p>Plans</p>
             </Link>
-            <Link href="">
+            <Link passHref href="">
               <p>About us</p>
             </Link>
-            <Link href="">
+            <Link passHref href="">
               <p>Blog</p>
             </Link>
-            <Link href="">
+            <Link passHref href="">
               <p>FAQ</p>
             </Link>
-            <Link href="">
+            <Link passHref href="">
               <p>Contact us</p>
             </Link>
           </nav>
@@ -33,4 +33,4 @@ const footer = () => {
   )
 }
 
-export default footer
+export default Footer

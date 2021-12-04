@@ -8,7 +8,7 @@ import offer1 from '../assets/svg/flexible.svg'
 import offer2 from '../assets/svg/quality.svg'
 import offer3 from '../assets/svg/inclusive.svg'
 
-const section1 = () => {
+const Section1 = () => {
   return (
     <div className={styles.sectionOneContent}>
       <div className={styles.topText}>
@@ -60,4 +60,4 @@ const section1 = () => {
   )
 }
 
-export default section1
+export default Section1

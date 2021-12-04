@@ -1,7 +1,7 @@
 import styles from './css/section3.module.scss'
 import Testimonials from './testimonialsx'
 
-const section3 = () => {
+const Section3 = () => {
   return (
     <div className={styles.sectionThree}>
       <div className={styles.sectionThreeContent}>
@@ -17,4 +17,4 @@ const section3 = () => {
   )
 }
 
-export default section3
+export default Section3
