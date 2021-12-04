@@ -1,5 +1,5 @@
 import styles from './css/section3.module.scss'
-import Testimonials from './testimonialsx'
+import Testimonials from './Testimonialsx'
 
 const Section3 = () => {
   return (
