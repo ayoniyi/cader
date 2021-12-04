@@ -1,0 +1,87 @@
+@import './mixins';
+
+.footerContent {
+  //   background: lavender;
+  @include flexRegular(row, flex-start);
+  border-top: 1px solid rgba(11, 28, 63, 0.5);
+  width: 95%;
+  margin: 1em auto 0 auto;
+  padding: 2em 3em;
+}
+@media (min-width: 1400px) {
+  .footerContent {
+    width: 1400px;
+    margin: auto;
+  }
+}
+.footerLeft {
+  width: 15%;
+}
+.footerRight {
+  width: 85%;
+}
+.footerLinks {
+  @include flexRegular(row, flex-start);
+  p {
+    margin-right: 2em;
+    font-weight: normal;
+    font-size: 1.2em;
+    color: rgba(3, 7, 73, 0.5);
+  }
+}
+@media (max-width: 1100px) {
+  .footerContent {
+    padding: 2em 1em;
+  }
+}
+@media (max-width: 850px) {
+  .footerLeft {
+    width: 25%;
+  }
+  .footerRight {
+    width: 75%;
+    // background: lavender;
+  }
+  .footerLinks {
+    font-size: 0.9em;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 700px) {
+  .footerContent {
+    padding: 0.5em;
+  }
+  .footerLeft {
+    font-size: 0.65em;
+  }
+  .footerLinks {
+    p {
+      font-size: 12px;
+      //   background: cornsilk;
+      margin-right: 1em;
+    }
+    p:nth-of-type(5) {
+      margin-right: 0;
+    }
+  }
+}
+// @media (max-width: 325px) {
+//   .footerLeft {
+//     font-size: 0.65em;
+//   }
+//   .footerLinks {
+//     p {
+//       font-size: 11px;
+//     }
+//   }
+// }
+// recommendation for smaller devices
+@media (max-width: 325px) {
+  .footerContent {
+    @include flexRegular(column-reverse, center);
+  }
+  .footerLinks {
+    @include flexRegular(column, center);
+    margin-bottom: 1em;
+  }
+}

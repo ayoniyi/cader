@@ -1,0 +1,123 @@
+@import './variables';
+@import './mixins';
+
+.headerContainer {
+  padding: 1em;
+}
+.headerContent {
+  // width: 95%;
+  // margin: auto auto auto 3em;
+  // background: $testColor;
+  @include flexRegular(row, flex-start);
+  align-items: flex-end;
+}
+.headerLeft {
+  width: 40%;
+  // background: lavender;
+  h1 {
+    // font-size: 1.7em;
+    font-size: 30px;
+  }
+}
+.headerRightRes {
+  display: none;
+}
+.headerRight {
+  @include flexRegular(row, flex-start);
+  width: 60%;
+  // background: coral;
+}
+.headerLinks {
+  @include flexRegular(row, space-between);
+  // background: blueviolet;
+  width: 55%;
+  p {
+    font-size: 0.95em;
+    color: rgba(3, 7, 73, 0.5);
+  }
+}
+.headerBtns {
+  @include flexRegular(row, center);
+  // background: skyblue;
+  padding: 1em 1.5em;
+  margin-left: 0.5em;
+  width: 45%;
+  button:nth-of-type(1) {
+    @include buttonRegular(#fff);
+    padding: 0 0.5em;
+    border: 2px solid $primaryColor;
+    margin-right: 1.2em;
+    color: $primaryColor;
+    width: 111px;
+    &:hover {
+      @include buttonRegular($primaryColor);
+      color: #fff;
+    }
+  }
+  button:nth-of-type(2) {
+    @include buttonRegular($primaryColor);
+    padding: 0 0.5em;
+    color: #fff;
+    width: 176px;
+    &:hover {
+      @include buttonRegular($primaryDark);
+    }
+  }
+}
+// @media (min-width: 1400px) {
+//   .headerContainer {
+//     background: lavender;
+//   }
+//   .headerContent {
+//     width: 1300px;
+//     margin: auto;
+//   }
+// }
+@media (max-width: 1100px) {
+  .headerContent {
+    width: 100%;
+    // background: $testColor;
+    margin: auto;
+  }
+  .headerLeft {
+    width: 35%;
+  }
+  .headerRight {
+    width: 65%;
+  }
+  .headerBtns {
+    button {
+      font-size: 0.8em;
+    }
+  }
+}
+@media (max-width: 934px) {
+  .headerLeft {
+    width: 20%;
+  }
+  .headerRight {
+    width: 80%;
+  }
+}
+@media (max-width: 750px) {
+  .headerContent {
+    width: 100%;
+    //background: $testColor;
+    align-items: center;
+  }
+  .headerLeft {
+    width: 70%;
+    h1 {
+      width: 24px;
+    }
+  }
+  .headerRight {
+    display: none;
+  }
+  .headerRightRes {
+    @include flexRegular(row, flex-end);
+    width: 30%;
+    align-items: center;
+    // background: pink;
+  }
+}

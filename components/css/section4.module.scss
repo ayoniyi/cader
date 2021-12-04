@@ -1,0 +1,89 @@
+@import './variables';
+@import './mixins';
+
+.sectionFourContent {
+  width: 95%;
+  background: rgba(255, 221, 196, 0.3);
+  border-radius: 10px;
+  margin: 10em 0;
+  padding: 3em 5em;
+}
+.sectionTxt {
+  //background: lavender;
+  width: 95%;
+  span {
+    font-size: 12px;
+    @include flexRegular(row, flex-start);
+    align-items: center;
+    color: #132f3a;
+  }
+  .line {
+    border: 1px solid #132f3ada;
+    width: 35px;
+    margin-right: 1em;
+  }
+  h1 {
+    //font-size: 2.7em;
+    font-size: 53px;
+    letter-spacing: 0.06em;
+    //width: 95%;
+  }
+  p {
+    font-family: Poppins;
+    font-size: 1em;
+    font-weight: 400;
+    //font-size: 16px;
+    letter-spacing: 1px;
+    //width: 95%;
+    margin-bottom: 2em;
+  }
+  button {
+    @include buttonRegular($primaryColor);
+    color: #fff;
+    width: 174px;
+    height: 52px;
+    font-size: 15px;
+    &:hover {
+      @include buttonRegular($primaryDark);
+      width: 174px;
+      height: 52px;
+    }
+  }
+  .btnRes {
+    display: none;
+  }
+}
+
+@media (max-width: 1080px) {
+  .sectionFourContent {
+    padding: 3em;
+  }
+  .sectionTxt {
+    width: 100%;
+    h1 {
+      font-size: 33px;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .sectionFourContent {
+    padding: 3em 1.5em;
+    width: 100%;
+  }
+  .sectionTxt {
+    h1 {
+      font-size: 24px;
+      width: 100%;
+    }
+    p {
+      display: none;
+    }
+    button {
+      display: none;
+    }
+    .btnRes {
+      display: block;
+      color: $primaryColor;
+    }
+  }
+}

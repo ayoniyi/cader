@@ -1,0 +1,24 @@
+@mixin flexRegular($direction, $space) {
+  display: flex;
+  justify-content: $space;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin gridRegular($gap) {
+  display: grid;
+  gap: $gap;
+}
+@mixin buttonRegular($buttonBack) {
+  transition: 0.4s ease-in;
+  background: $buttonBack;
+  border: 0;
+  border-radius: 6px;
+  height: 42px;
+}
+// @mixin buttonHover($buttonBack){
+//     transition: .4s ease-in;
+//     background: $buttonBack;
+//     border: 0;
+// }
+
+// @include flexCenter(row, lightblue, center);
